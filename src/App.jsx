@@ -9,9 +9,9 @@ import './App.css';
 function App() {
   const [imageSize, setImageSize] = useState(1024);
   const [textValues, setTextValues] = useState({
-    header: 'Header',
-    subheader: 'Subheader',
-    text: 'Some text',
+    header: 'Hvem stemte hva?',
+    subheader: 'Rødt og SV foreslo:',
+    text: 'Stortinget ber regjeringen fremme nødvendige forslag for å sikre profittfri barnehagedrift',
   });
 
   const updateText = (name, value) => {

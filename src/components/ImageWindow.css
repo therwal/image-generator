@@ -1,5 +1,69 @@
 .ImageWindow {
   background-color: white;
-  width: 800px;
-  height: 800px;
+  width: 512px;
+  height: 512px;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.ImageWindw-textArea {
+  flex-grow: 1;
+  display: grid;
+  place-content: center;
+}
+
+.ImageWindw-textArea h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.ImageWindw-textArea h2 {
+  margin: 1em 0 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.ImageWindw-textArea p {
+  margin: 0.3em 0 0;
+  font-size: 1.4rem;
+  max-width: 400px;
+}
+
+.ImageWindow-whovoted {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2em;
+}
+
+.square {
+  width: 210px;
+  height: 165px;
+  border: 2px solid black;
+  position: relative;
+}
+
+.circle {
+  background-color: white;
+  border: 2px solid black;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(50% - 16px);
+  top: -16px;
+  display: grid;
+  place-items: center;
+}
+
+.square-left,
+.square-left > .circle {
+  border-color: #7fc6b1;
+  color: #7fc6b1;
+}
+
+.square-right,
+.square-right > .circle {
+  border-color: #d61430;
+  color: #d61430;
 }
