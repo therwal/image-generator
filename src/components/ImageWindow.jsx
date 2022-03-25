@@ -1,11 +1,12 @@
 import './ImageWindow.css';
 
-function ImageWindow() {
+function ImageWindow({ textValues }) {
+  const { header, subheader, text } = textValues;
   return (
     <div className="ImageWindow">
-      <h1>tittel</h1>
-      <h2>subtittel</h2>
-      <p>hei hei hei</p>
+      <h1>{header}</h1>
+      <h2>{subheader}</h2>
+      <p>{text}</p>
     </div>
   );
 }

@@ -8,6 +8,15 @@ import './App.css';
 
 function App() {
   const [imageSize, setImageSize] = useState(1024);
+  const [textValues, setTextValues] = useState({
+    header: 'Header',
+    subheader: 'Subheader',
+    text: 'Some text',
+  });
+
+  const updateText = (name, value) => {
+    setTextValues({ ...textValues, [name]: value });
+  };
 
   const changeImageSize = (e) => {
     setImageSize(e);
@@ -27,8 +36,10 @@ function App() {
         <h1>Hvem stemte</h1>
       </header>
       <main>
-        <ImageWindow />
+        <ImageWindow textValues={textValues} />
         <Sidebar
+          textValues={textValues}
+          updateText={updateText}
           imageSize={imageSize}
           changeImageSize={changeImageSize}
           downloadImage={downloadImage}
