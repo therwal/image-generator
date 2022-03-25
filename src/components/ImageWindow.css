@@ -1,4 +1,10 @@
 .ImageWindow {
+  flex-grow: 1;
+  display: grid;
+  place-items: center;
+}
+
+.ImageWindow-container {
   background-color: white;
   width: 512px;
   height: 512px;

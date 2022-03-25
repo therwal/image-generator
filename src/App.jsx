@@ -23,7 +23,7 @@ function App() {
   };
 
   const downloadImage = () => {
-    toPng(document.querySelector('.ImageWindow'), {
+    toPng(document.querySelector('.ImageWindow-container'), {
       canvasWidth: imageSize,
       canvasHeight: imageSize,
     }).then((dataUrl) => {
@@ -32,19 +32,14 @@ function App() {
   };
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hvem stemte</h1>
-      </header>
-      <main>
-        <ImageWindow textValues={textValues} />
-        <Sidebar
-          textValues={textValues}
-          updateText={updateText}
-          imageSize={imageSize}
-          changeImageSize={changeImageSize}
-          downloadImage={downloadImage}
-        />
-      </main>
+      <ImageWindow textValues={textValues} />
+      <Sidebar
+        textValues={textValues}
+        updateText={updateText}
+        imageSize={imageSize}
+        changeImageSize={changeImageSize}
+        downloadImage={downloadImage}
+      />
     </div>
   );
 }

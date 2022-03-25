@@ -1,4 +1,13 @@
 .Sidebar {
   background-color: #393e46;
   color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1em 1em 0;
+  pad
+}
+
+.Sidebar input {
+  display: block;
 }
