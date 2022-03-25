@@ -1,0 +1,29 @@
+.WhoVoted {
+  width: 210px;
+  height: 165px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.WhoVoted-green,
+.WhoVoted-green > .circle {
+  border-color: #7fc6b1;
+  color: #7fc6b1;
+}
+
+.WhoVoted-red,
+.WhoVoted-red > .circle {
+  border-color: #d61430;
+  color: #d61430;
+}
+
+img {
+  width: 100%;
+  display: block;
+  width: 40px;
+}

@@ -1,6 +1,9 @@
+import PartyList from './PartyList';
 import './Sidebar.css';
 
 function Sidebar({
+  partylist,
+  updateParty,
   textValues,
   updateText,
   imageSize,
@@ -26,6 +29,7 @@ function Sidebar({
           onChange={handleOnChange}
           type="text"
           name="header"
+          id="header"
         />
         <label htmlFor="subheader">Subheader</label>
         <input
@@ -33,10 +37,18 @@ function Sidebar({
           onChange={handleOnChange}
           type="text"
           name="subheader"
+          id="subheader"
         />
         <label htmlFor="text">text</label>
-        <input value={text} onChange={handleOnChange} type="text" name="text" />
+        <input
+          value={text}
+          onChange={handleOnChange}
+          type="text"
+          name="text"
+          id="text"
+        />
       </div>
+      <PartyList partylist={partylist} updateParty={updateParty} />
       <label htmlFor="imageSize">Image Size</label>
       <select value={imageSize} onChange={handleSelectChange} id="imageSize">
         <option value="512">Small 512x512</option>
