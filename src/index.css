@@ -4,3 +4,7 @@ body {
   background-color: #222831;
   font-family: 'Open Sans', sans-serif;
 }
+
+textarea {
+  font-family: 'Open Sans', sans-serif;
+}

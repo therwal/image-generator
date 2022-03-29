@@ -6,7 +6,13 @@ const WhoVoted = ({ pro, partylist }) => {
   ));
   return (
     <div className={`WhoVoted ${pro ? 'WhoVoted-green' : 'WhoVoted-red'}`}>
-      <div className="circle">{pro ? 'Ja' : 'Nei'}</div>
+      <div className="circle">
+        {pro ? (
+          <i className="fas fa-check"></i>
+        ) : (
+          <i className="fas fa-times"></i>
+        )}
+      </div>
       {parties}
     </div>
   );

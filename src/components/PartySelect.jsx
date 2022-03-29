@@ -11,25 +11,21 @@ function PartySelect({ party, updateParty }) {
     <div className="PartySelect-buttons">
       <h2>{party.name}</h2>
       <button
-        className="PartySelect-button PartySelect-button-left"
+        className="PartySelect-btn PartySelect-btn-left"
         name="pro"
         onClick={handleClick}
       >
-        <i className="fas fa-check"></i> For
+        <i className="fas fa-check"></i> Ja
       </button>
-      <button
-        className="PartySelect-button"
-        name="neutral"
-        onClick={handleClick}
-      >
+      <button className="PartySelect-btn" name="neutral" onClick={handleClick}>
         <i className="fas fa-minus"></i> Fjern
       </button>
       <button
-        className="PartySelect-button PartySelect-button-right"
+        className="PartySelect-btn PartySelect-btn-right"
         name="against"
         onClick={handleClick}
       >
-        <i className="fas fa-times"></i> Imot
+        <i className="fas fa-times"></i> Nei
       </button>
     </div>
   );

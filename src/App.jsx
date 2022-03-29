@@ -33,12 +33,12 @@ function App() {
     );
   };
 
-  const updateText = (name, value) => {
-    setTextValues({ ...textValues, [name]: value });
+  const updateText = (e) => {
+    setTextValues({ ...textValues, [e.target.name]: e.target.value });
   };
 
   const changeImageSize = (e) => {
-    setImageSize(e);
+    setImageSize(e.target.value);
   };
 
   const downloadImage = () => {

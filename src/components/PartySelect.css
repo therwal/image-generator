@@ -2,3 +2,37 @@ h2 {
   margin: 0;
   text-transform: uppercase;
 }
+
+textarea {
+  display: block;
+}
+
+.PartySelect-btn {
+  cursor: pointer;
+  border: none;
+  padding: 0.5em 1em;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.PartySelect-btn:hover {
+  background-color: #191e24;
+}
+
+.PartySelect-btn-left {
+  background-color: #7fc6b1;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+.PartySelect-btn-right {
+  background-color: #d61430;
+  border-radius: 0 0.2em 0.2em 0;
+}
+
+.PartySelect-btn-left:hover {
+  background-color: #4ba88c;
+}
+
+.PartySelect-btn-right:hover {
+  background-color: #a00f23;
+}
